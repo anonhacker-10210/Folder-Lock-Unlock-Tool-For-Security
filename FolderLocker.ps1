@@ -12,13 +12,14 @@ if ($h) {
     Write-Host @"
 Usage:
     To lock a folder:
-        .\FolderLocker.ps1 -folderPath "C:\MySecretFolder" -action "lock"
+        powershell -ExecutionPolicy Bypass -File "C:\Path\Of\The\Script\FolderLocker.ps1" -folderPath "C:\Path\To\Folder\You\wanna\Unlock" -action "lock"
+
 
     To unlock a folder:
-        .\FolderLocker.ps1 -folderPath "C:\MySecretFolder" -action "unlock"
+        powershell -ExecutionPolicy Bypass -File "C:\Path\Of\The\Script\FolderLocker.ps1" -folderPath "C:\Path\To\Folder\You\wanna\Unlock" -action "unlock"
 
     To display this help menu:
-        .\FolderLocker.ps1 -h
+        powershell -ExecutionPolicy Bypass -File "C:\Users\user\Desktop\dir locker\FolderLocker.ps1" -h
 "@
     exit
 }
